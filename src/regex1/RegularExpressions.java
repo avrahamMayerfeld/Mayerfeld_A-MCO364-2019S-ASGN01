@@ -18,7 +18,7 @@ public class RegularExpressions
 		ArrayList<String> websiteList = new ArrayList<String>();
 		Scanner keyboard = new Scanner(System.in);
 		
-		Pattern nameRegex = Pattern.compile("(\\w{2,})|(\\w.) (\\w. )?(\\w. )?\\w{2,}");
+		Pattern nameRegex = Pattern.compile("(([A-Z]\\. ){1,2}|[A-Z]\\w+ ([A-Z]\\. )?)[A-Z]\\w{2,}");
 		/*allows 12 months per year, 31 days per month; year either 2 numbers, 
 		 or 4 numbers beginning 19 or 20, with either a forward slash or dash between numbers.
 		 It is probably a bad practice to allow multiple formats, but this is the assignment.*/
