@@ -38,7 +38,7 @@ public class RegularExpressions
 			System.out.println("Enter your name:");
 			name = keyboard.nextLine();
 			nameMatcher = nameRegex.matcher(name);
-	    }while(!nameMatcher.matches());
+	    	}while(!nameMatcher.matches());
 	    	
 		do{
 			System.out.println("Enter your birthday:");
@@ -63,7 +63,7 @@ public class RegularExpressions
 		
 		Stream<String> urls = websiteList.stream().filter(w -> w.matches(websiteRegex));
 			
-        urls.forEach(System.out::println);
+        	urls.forEach(System.out::println);
 		
 	}
 }
